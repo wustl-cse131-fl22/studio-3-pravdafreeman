@@ -18,7 +18,7 @@ public class Sieve {
 		    primes[i] = i+1;
 		}
 		primes[0] = 0;
-		for (int i = 0; i < Math.sqrt(primes.length); i++){
+		for (int i = 0; i < Math.sqrt(n); i++){
 			if (primes[i] != 0 ) {
 				for (int j = i+1; j < (primes.length); j++) {
 					if (primes[j]%primes[i] == 0) {
